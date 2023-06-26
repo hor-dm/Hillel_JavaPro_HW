@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_ALL" class="ch.qos.logback.core.FileAppender">
+        <file>logs/HW27-logging_all.log</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_INFO" class="ch.qos.logback.core.FileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>logs/HW27-logging_info.log</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_ERROR" class="ch.qos.logback.core.FileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>logs/HW27-logging_error.log</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="chapters.configuration" level="INFO"/>
+
+    <root level="INFO">
+        <appender-ref ref="FILE_ALL"/>
+        <appender-ref ref="FILE_INFO"/>
+        <appender-ref ref="FILE_ERROR"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

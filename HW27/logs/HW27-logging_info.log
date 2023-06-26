@@ -1,0 +1,20 @@
+218  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Tom
+221  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Bob
+222  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Bill
+229  [main] INFO  org.example.order.CoffeeOrderBoard -- Deleted order: Order{orderNumber=1, clientName='Tom'}
+229  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: John
+229  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Alice
+230  [main] INFO  org.example.order.CoffeeOrderBoard -- Deleted order: Order{orderNumber=3, clientName='Bill'}
+250  [main] INFO  org.example.order.CoffeeOrderBoard -- 2: Bob
+250  [main] INFO  org.example.order.CoffeeOrderBoard -- 4: John
+251  [main] INFO  org.example.order.CoffeeOrderBoard -- 5: Alice
+214  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Tom
+218  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Bob
+218  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Bill
+225  [main] INFO  org.example.order.CoffeeOrderBoard -- Deleted order: Order{orderNumber=1, clientName='Tom'}
+225  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: John
+225  [main] INFO  org.example.order.CoffeeOrderBoard -- Added client name: Alice
+226  [main] INFO  org.example.order.CoffeeOrderBoard -- Deleted order: Order{orderNumber=3, clientName='Bill'}
+240  [main] INFO  org.example.order.CoffeeOrderBoard -- 2: Bob
+240  [main] INFO  org.example.order.CoffeeOrderBoard -- 4: John
+240  [main] INFO  org.example.order.CoffeeOrderBoard -- 5: Alice
